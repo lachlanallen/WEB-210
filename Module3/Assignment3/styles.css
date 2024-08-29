@@ -1,0 +1,155 @@
+/* ROOT STYLES 
+---------------------------------*/
+
+:root {
+    --dark-teal: #175873;
+    --teal: #2B7C85;
+    --seafoam-green: #a4c5bc;
+    --seafoam-green-overlay: rgb(223 236 232 / 0.9);
+    --off-white: #f5f0e7;
+    --navy-blue: #0C1446;
+}
+
+/* GLOBAL STYLES 
+---------------------------------*/
+body {
+    font-family: 'Century Gothic', sans-serif;
+    background: url('images/background.jpg') no-repeat center center/cover;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+
+footer a {
+    color: var(--seafoam-green);
+}
+
+footer a:hover {
+    color: var(--off-white);
+}
+
+.btn {
+    background-color: var(--dark-teal);
+    color: var(--seafoam-green);
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: var(--teal);
+    color: var(--off-white);
+}
+
+/* ABOUT
+---------------------------------*/
+.content-wrapper {
+    background: var(--seafoam-green-overlay);
+}
+
+
+/* RESUME
+---------------------------------*/
+
+/* Profile */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(96 154 161 / 0.8);
+}
+
+/* Projects */
+.project-header {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(96 154 161 / 0.8);
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(96 154 161 / 0.8);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Work Experience */
+
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(96 154 161 / 0.8);
+}
+
+/* Education */
+.education {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(96 154 161 / 0.8);
+}
+
+/* FOOTER  
+---------------------------------*/
+footer {
+    background-color: var(--navy-blue);
+    color: var(--seafoam-green);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* MEDIA QUERIES  
+---------------------------------*/
+@media screen and (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .project {
+        width: 70%;
+    }
+}
