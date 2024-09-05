@@ -1,0 +1,158 @@
+/* ROOT STYLES 
+---------------------------------*/
+
+:root {
+    --brown: #bc6c25;
+    --light-brown: #dda15e;
+    --light-brown-overlay: rgb(221 162 94 / 0.45);
+    --off-white: #f9f2e4;
+    --light-green: #bcbd8b;
+    --green: #606c38;
+    --dark-green: #283618;
+}
+
+/* GLOBAL STYLES 
+---------------------------------*/
+body {
+    font-family: 'Century Gothic', sans-serif;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+
+footer a {
+    color: var(--light-green);
+}
+
+footer a:hover {
+    color: var(--off-white);
+}
+
+.btn {
+    background-color: var(--dark-green);
+    color: var(--light-green);
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: var(--green);
+    color: var(--off-white);
+}
+
+/* ABOUT
+---------------------------------*/
+.content-wrapper {
+    background: var(--light-brown-overlay);
+}
+
+
+/* RESUME
+---------------------------------*/
+
+/* Profile */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(96 108 56 / 0.8);
+}
+
+/* Projects */
+.project-header {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(96 108 56 / 0.8);
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: fit-content;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(96 108 56 / 0.8);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Work Experience */
+
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(96 108 56 / 0.8);
+}
+
+/* Education */
+.education {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(96 108 56 / 0.8);
+}
+
+/* FOOTER  
+---------------------------------*/
+footer {
+    background-color: var(--dark-green);
+    color: var(--light-green);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* MEDIA QUERIES  
+---------------------------------*/
+@media screen and (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .project {
+        width: 70%;
+    }
+}
